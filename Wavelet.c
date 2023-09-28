@@ -1,8 +1,7 @@
-// c++ code, but c style
-#include <cstdio>
-#include <cmath>
-#include <cstring>
-#include <cassert>
+#include <stdio.h>
+#include <math.h>
+#include <string.h>
+#include <assert.h>
 #pragma warning(disable: 4996)  // For VS environment, if not please ignore this code
 
 #define ROUND_FIRST 1  // For quant-mapping value comparison
@@ -10,10 +9,10 @@
 /* ########## Please change the variable below for the test ########## */
 
 // # quantization bits for each levels
-#define QUANT_BITS_LOW 2   // LL3 : # of bits for non-loss quantization = 14
-#define QUANT_BITS_3 2   // {HL3,LH3,HH3} : # of bits for non-loss quantization = 14
-#define QUANT_BITS_2 2   // {HL2,LH2,HH2} : # of bits for non-loss quantization = 12
-#define QUANT_BITS_1 2   // {HL1,LH1,HH1} : # of bits for non-loss quantization = 10
+#define QUANT_BITS_LOW 7   // LL3 : # of bits for non-loss quantization = 14
+#define QUANT_BITS_3 7   // {HL3,LH3,HH3} : # of bits for non-loss quantization = 14
+#define QUANT_BITS_2 6   // {HL2,LH2,HH2} : # of bits for non-loss quantization = 12
+#define QUANT_BITS_1 5   // {HL1,LH1,HH1} : # of bits for non-loss quantization = 10
 
 #define input "Airplane_256x256_yuv400_8bit.raw"  // Change file name including filename extension
 #define height 256        // Change img height
